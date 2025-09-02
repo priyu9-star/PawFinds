@@ -37,6 +37,10 @@ Follow these steps to set up the project locally:
 ### Additional Notes
 - Ensure you have Node.js and npm installed on your machine.
 
+### Admin Credentials
+- Username: admin
+- Password: 123
+
 ## Contributing
 We welcome contributions to improve PawFinds! To contribute, follow these steps:
 - Fork the repository.

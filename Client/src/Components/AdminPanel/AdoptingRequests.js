@@ -11,7 +11,7 @@ const AdoptingRequests = () => {
 
   const fetchForms = async () => {
     try {
-      const response = await fetch('srv-d2u6o77diees73clhk5g/form/getForms');
+      const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/form/getForms');
       if (!response.ok) {
         throw new Error('An error occurred');
       }
@@ -26,7 +26,7 @@ const AdoptingRequests = () => {
 
   const fetchPets = async () => {
     try {
-      const response = await fetch('srv-d2u6o77diees73clhk5g/approvedPets');
+      const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/approvedPets');
       if (!response.ok) {
         throw new Error('An error occurred');
       }
@@ -112,7 +112,7 @@ const AdoptingRequests = () => {
           <div className='popup-content'>
             <div className='pet-view-card'>
               <div className='pet-card-pic'>
-                <img src={`http://localhost:4000/images/${selectedPet.filename}`} alt={selectedPet.name} />
+                <img src={`https://pawfinds-backend-tn7f.onrender.com/images/${selectedPet.filename}`} alt={selectedPet.name} />
               </div>
               <div className='pet-card-details'>
                 <h2>{selectedPet.name}</h2>

@@ -11,7 +11,7 @@ const AdminLogin = () => {
   useEffect(() => {
     const fetchUsersData = async () => {
       try {
-        const response = await fetch('srv-d2u6o77diees73clhk5g/admin/credentials');
+        const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/admin/credentials');
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }

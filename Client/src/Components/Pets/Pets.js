@@ -9,7 +9,7 @@ const Pets = () => {
   useEffect(() => {
     const fetchRequests = async () => {
       try {
-        const response = await fetch('srv-d2u6o77diees73clhk5g/approvedPets')
+        const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/approvedPets')
         if (!response.ok) {
           throw new Error('An error occurred')
         }

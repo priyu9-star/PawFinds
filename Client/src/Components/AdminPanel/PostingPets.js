@@ -7,7 +7,7 @@ const PostingPets = () => {
 
   const fetchRequests = async () => {
     try {
-      const response = await fetch('srv-d2u6o77diees73clhk5g/requests')
+      const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/requests')
       if (!response.ok) {
         throw new Error('An error occurred')
       }

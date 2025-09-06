@@ -26,7 +26,7 @@ const PetCards = (props) => {
   const handleApprove = async () => {
     setIsApproving(true);
     try {
-      const response = await fetch(`srv-d2u6o77diees73clhk5g/approving/${props.pet._id}`, {
+      const response = await fetch(`https://pawfinds-backend-tn7f.onrender.com/approving/${props.pet._id}`, {
         method: 'PUT',
         body: JSON.stringify({
           status: "Approved"
@@ -51,7 +51,7 @@ const PetCards = (props) => {
   const deleteFormsAdoptedPet = async () => {
     setIsDeleting(true)
     try {
-      const deleteResponses = await fetch(`srv-d2u6o77diees73clhk5g/form/delete/many/${props.pet._id}`, {
+      const deleteResponses = await fetch(`https://pawfinds-backend-tn7f.onrender.com/form/delete/many/${props.pet._id}`, {
         method: 'DELETE'
       });
       if (!deleteResponses.ok) {
@@ -65,7 +65,7 @@ const PetCards = (props) => {
 
   const handleReject = async () => {
     try {
-      const response = await fetch(`srv-d2u6o77diees73clhk5g/delete/${props.pet._id}`, {
+      const response = await fetch(`https://pawfinds-backend-tn7f.onrender.com/delete/${props.pet._id}`, {
         method: 'DELETE'
       })
 
@@ -87,7 +87,7 @@ const PetCards = (props) => {
     <div className='req-containter'>
       <div className='pet-view-card'>
         <div className='pet-card-pic'>
-          <img src={`srv-d2u6o77diees73clhk5g/images/${props.pet.filename}`} alt={props.pet.name} />
+          <img src={`https://pawfinds-backend-tn7f.onrender.com/images/${props.pet.filename}`} alt={props.pet.name} />
         </div>
         <div className='pet-card-details'>
           <h2>{props.pet.name}</h2>

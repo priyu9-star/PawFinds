@@ -41,7 +41,7 @@ function AdoptForm(props) {
 
       setIsSubmitting(true)
 
-      const response = await fetch('srv-d2u6o77diees73clhk5g/form/save', {
+      const response = await fetch('https://pawfinds-backend-tn7f.onrender.com/form/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -87,7 +87,7 @@ function AdoptForm(props) {
       <div className="form-pet-container">
         <div className="pet-details">
           <div className="pet-pic">
-            <img src={`srv-d2u6o77diees73clhk5g/images/${props.pet.filename}`} alt={props.pet.name} />
+            <img src={`https://pawfinds-backend-tn7f.onrender.com/images/${props.pet.filename}`} alt={props.pet.name} />
           </div>
           <div className="pet-info">
             <h2>{props.pet.name}</h2>

@@ -81,7 +81,7 @@ const PostPetSection = () => {
     }
 
     try {
-      const response = await fetch("srv-d2u6o77diees73clhk5g/services", {
+      const response = await fetch("https://pawfinds-backend-tn7f.onrender.com/services", {
         method: "POST",
         body: formData,
       });

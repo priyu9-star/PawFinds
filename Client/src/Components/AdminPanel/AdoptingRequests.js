@@ -11,7 +11,7 @@ const AdoptingRequests = () => {
 
   const fetchForms = async () => {
     try {
-      const response = await fetch('http://localhost:4000/form/getForms');
+      const response = await fetch('srv-d2u6o77diees73clhk5g/form/getForms');
       if (!response.ok) {
         throw new Error('An error occurred');
       }
@@ -26,7 +26,7 @@ const AdoptingRequests = () => {
 
   const fetchPets = async () => {
     try {
-      const response = await fetch('http://localhost:4000/approvedPets');
+      const response = await fetch('srv-d2u6o77diees73clhk5g/approvedPets');
       if (!response.ok) {
         throw new Error('An error occurred');
       }
